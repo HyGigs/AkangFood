@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_makanan"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="Makanan Khas" />
+    <item
+        android:id="@+id/menu_minuman"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="Minuman Khas" />
+
+    <item
+        android:id="@+id/menu_favorite"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="Favorite" />
+
+</menu>
