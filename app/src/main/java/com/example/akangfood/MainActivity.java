@@ -63,12 +63,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int itemId = item.getItemId();
-
         if (itemId == R.id.menu_makanan) {
+            navigationView.setCheckedItem(R.id.menu_makanan);
             replaceFragment(new MakananFragment());
         } else if (itemId == R.id.menu_minuman) {
+            navigationView.setCheckedItem(R.id.menu_minuman);
             replaceFragment(new MinumanFragment());
         } else if (itemId == R.id.menu_favorite) {
+            navigationView.setCheckedItem(R.id.menu_favorite);
             replaceFragment(new FavoriteFragment());
         }
 
