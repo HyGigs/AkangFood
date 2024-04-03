@@ -2,17 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:checkable="true"
         android:id="@+id/menu_makanan"
-        android:icon="@android:drawable/ic_menu_camera"
+        android:icon="@drawable/ic_food_black"
         android:title="Makanan Khas" />
     <item
+        android:checkable="true"
         android:id="@+id/menu_minuman"
-        android:icon="@android:drawable/ic_menu_camera"
+        android:icon="@drawable/ic_drink_black"
         android:title="Minuman Khas" />
 
     <item
+        android:checkable="true"
         android:id="@+id/menu_favorite"
-        android:icon="@android:drawable/ic_menu_camera"
+        android:icon="@drawable/ic_fav_black"
         android:title="Favorite" />
 
 </menu>
