@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/white">
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:src="@drawable/bg"
+      android:scaleType="centerCrop"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:gravity="center"
+      android:paddingHorizontal="32dp"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/black"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+      
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:paddingHorizontal="24dp"
+          android:paddingVertical="70dp"
+          android:orientation="vertical"
+          android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textFontWeight="1000"
+            android:textAlignment="center"
+            android:textSize="42sp"
+            android:textColor="@color/darkOrange"
+            android:text="Akang Food" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="@color/darkGrey"
+            android:text="Aplikasi makanan bandung, dari orang bandung." />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/black"
+            android:elevation="5dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/bgGrey">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingHorizontal="16dp"
+              android:paddingVertical="4dp">
+
+            <EditText
+                android:id="@+id/nameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:fontFamily="@font/poppins_extralight"
+                android:textColor="@color/black"
+                android:textColorHint="#666666"
+                android:textSize="16sp"
+                android:hint="Name"
+                android:backgroundTint="@android:color/transparent"/>
+          </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/black"
+            android:elevation="5dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/bgGrey">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingHorizontal="16dp"
+              android:paddingVertical="4dp">
+
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:fontFamily="@font/poppins_extralight"
+                android:textColor="@color/black"
+                android:textColorHint="#666666"
+                android:textSize="16sp"
+                android:hint="Email"
+                android:backgroundTint="@android:color/transparent"/>
+
+          </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/lightOrange"
+            android:padding="12dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textFontWeight="500"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/black"
+            android:textSize="16sp"
+            android:text="Let's Go!"
+            android:textColor="@color/bgGrey"
+            app:cornerRadius="12dp"/>
+
+      </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+  </LinearLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
